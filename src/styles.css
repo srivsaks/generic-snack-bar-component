@@ -1,0 +1,35 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+.snackbar {
+  background: slateblue;
+  height: 30px;
+  text-align: center;
+  color: white;
+  padding: 10px;
+  position: fixed;
+  z-index: 1;
+  bottom: 1%;
+  left: 50%;
+  animation: fadein 0.5s linear, fadeout 0.5s 2.5s linear;
+}
+
+@keyframes fadein {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeout {
+  100% {
+    opacity: 0;
+  }
+  0% {
+    opacity: 1;
+  }
+}
